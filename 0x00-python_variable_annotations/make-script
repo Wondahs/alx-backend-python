@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Get file name including extension name
+echo 'Enter File Name'
+read filename
+
+# Add shebang
+echo '#!/usr/bin/env python3' > $filename
+
+# Make file executable
+chmod +x $filename
+
+# Open file
+vim $filename
